@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": "2026-10-06.2",
+  "institution": "Sir Syed University of Engineering and Technology, Karachi",
+  "department": "Faculty of Computing & Applied Sciences",
+  "semester": {
+    "id": "5",
+    "label": "5th Semester"
+  },
+  "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+  "periods": [
+    { "id": 1, "start": "08:00", "end": "08:50" },
+    { "id": 2, "start": "08:50", "end": "09:40" },
+    { "id": 3, "start": "09:40", "end": "10:30" },
+    { "id": 4, "start": "10:30", "end": "11:20" },
+    { "id": 5, "start": "11:20", "end": "12:10" },
+    { "id": 6, "start": "12:10", "end": "13:00" },
+    { "id": 7, "start": "13:00", "end": "13:50" },
+    { "id": 8, "start": "13:50", "end": "14:40" },
+    { "id": 9, "start": "14:40", "end": "15:30" },
+    { "id": 10, "start": "15:30", "end": "16:20" },
+    { "id": 11, "start": "16:20", "end": "17:10" },
+    { "id": 12, "start": "17:10", "end": "18:00" }
+  ],
+  "components": [
+    {
+      "id": "comp-net-theory",
+      "subjectId": "comp-net",
+      "subjectName": "Computer Networks",
+      "kind": "theory",
+      "code": "CompNet"
+    },
+    {
+      "id": "comp-net-lab",
+      "subjectId": "comp-net",
+      "subjectName": "Computer Networks",
+      "kind": "practical",
+      "code": "CompNet Lab"
+    },
+    {
+      "id": "web-eng-theory",
+      "subjectId": "web-eng",
+      "subjectName": "Web Technologies",
+      "kind": "theory",
+      "code": "WebTec"
+    },
+    {
+      "id": "web-eng-lab",
+      "subjectId": "web-eng",
+      "subjectName": "Web Technologies",
+      "kind": "practical",
+      "code": "WebTec Lab"
+    },
+    {
+      "id": "compiler-const",
+      "subjectId": "compiler-const",
+      "subjectName": "Compiler Construction",
+      "kind": "single",
+      "code": "C_Cst"
+    },
+    {
+      "id": "enterprise-sys",
+      "subjectId": "enterprise-sys",
+      "subjectName": "Enterprise Systems",
+      "kind": "single",
+      "code": "EntSys"
+    },
+    {
+      "id": "prob-stats",
+      "subjectId": "prob-stats",
+      "subjectName": "Probability & Statistics",
+      "kind": "single",
+      "code": "ProbStat"
+    },
+    {
+      "id": "tech-writing",
+      "subjectId": "tech-writing",
+      "subjectName": "Technical Report Writing",
+      "kind": "single",
+      "code": "TechWri"
+    }
+  ],
+  "requiredComponentIds": [
+    "comp-net-theory",
+    "comp-net-lab",
+    "web-eng-theory",
+    "web-eng-lab",
+    "compiler-const",
+    "enterprise-sys",
+    "prob-stats",
+    "tech-writing"
+  ],
+  "sections": [
+    {
+      "id": "A",
+      "name": "Section CS5A",
+      "slots": [
+        { "day": "Mon", "periods": [1], "componentId": "compiler-const", "teacher": "Anum", "room": "HFT-10" },
+        { "day": "Mon", "periods": [2], "componentId": "comp-net-theory", "teacher": "Rija", "room": "HFT-10" },
+        { "day": "Mon", "periods": [3], "componentId": "enterprise-sys", "teacher": "Nadeem", "room": "HFT-10" },
+        { "day": "Mon", "periods": [4, 5, 6], "componentId": "web-eng-lab", "teacher": "Mohsin", "room": "HFT-04" },
+        { "day": "Tue", "periods": [7, 8], "componentId": "prob-stats", "teacher": "Ahsan", "room": "HT-07" },
+        { "day": "Tue", "periods": [9], "componentId": "compiler-const", "teacher": "Anum", "room": "HT-07" },
+        { "day": "Tue", "periods": [10, 11], "componentId": "tech-writing", "teacher": "TBA (TRW)", "room": "HT-07" },
+        { "day": "Wed", "periods": [7], "componentId": "enterprise-sys", "teacher": "Nadeem", "room": "HT-01" },
+        { "day": "Wed", "periods": [8], "componentId": "compiler-const", "teacher": "Anum", "room": "HT-01" },
+        { "day": "Wed", "periods": [9], "componentId": "web-eng-theory", "teacher": "Mohsin", "room": "HT-01" },
+        { "day": "Wed", "periods": [10, 11], "componentId": "comp-net-theory", "teacher": "Rija", "room": "HT-01" },
+        { "day": "Thu", "periods": [1], "componentId": "web-eng-theory", "teacher": "Mohsin", "room": "HT-01" },
+        { "day": "Thu", "periods": [2], "componentId": "enterprise-sys", "teacher": "Nadeem", "room": "HT-01" },
+        { "day": "Thu", "periods": [3], "componentId": "prob-stats", "teacher": "Ahsan", "room": "HT-01" },
+        { "day": "Thu", "periods": [4, 5, 6], "componentId": "comp-net-lab", "teacher": "Sobiya", "room": "HFT-04" }
+      ]
+    },
+    {
+      "id": "B",
+      "name": "Section CS5B",
+      "slots": [
+        { "day": "Mon", "periods": [7], "componentId": "comp-net-theory", "teacher": "Rija", "room": "HT-01" },
+        { "day": "Mon", "periods": [8], "componentId": "enterprise-sys", "teacher": "Nadeem", "room": "HT-01" },
+        { "day": "Mon", "periods": [9, 10], "componentId": "prob-stats", "teacher": "Ahsan", "room": "HT-01" },
+        { "day": "Mon", "periods": [11], "componentId": "tech-writing", "teacher": "TBA (TRW)", "room": "HT-01" },
+        { "day": "Tue", "periods": [1], "componentId": "enterprise-sys", "teacher": "Nadeem", "room": "HT-07" },
+        { "day": "Tue", "periods": [2], "componentId": "compiler-const", "teacher": "Anum", "room": "HT-07" },
+        { "day": "Tue", "periods": [3], "componentId": "comp-net-theory", "teacher": "Rija", "room": "HT-07" },
+        { "day": "Tue", "periods": [4, 5, 6], "componentId": "web-eng-lab", "teacher": "Mohsin", "room": "HFT-04" },
+        { "day": "Wed", "periods": [1], "componentId": "prob-stats", "teacher": "Ahsan", "room": "HT-01" },
+        { "day": "Wed", "periods": [2], "componentId": "enterprise-sys", "teacher": "Nadeem", "room": "HT-01" },
+        { "day": "Wed", "periods": [3], "componentId": "web-eng-theory", "teacher": "Mohsin", "room": "HT-01" },
+        { "day": "Wed", "periods": [4, 5, 6], "componentId": "comp-net-lab", "teacher": "Sobiya", "room": "HFT-04" },
+        { "day": "Thu", "periods": [7], "componentId": "comp-net-theory", "teacher": "Rija", "room": "HFT-12" },
+        { "day": "Thu", "periods": [8], "componentId": "web-eng-theory", "teacher": "Mohsin", "room": "HFT-12" },
+        { "day": "Thu", "periods": [9, 10], "componentId": "compiler-const", "teacher": "Anum", "room": "HFT-12" },
+        { "day": "Thu", "periods": [11], "componentId": "tech-writing", "teacher": "TBA (TRW)", "room": "HFT-12" }
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Section CS5C",
+      "slots": [
+        { "day": "Mon", "periods": [1, 2, 3], "componentId": "comp-net-lab", "teacher": "Sobiya", "room": "HFT-04" },
+        { "day": "Mon", "periods": [4], "componentId": "comp-net-theory", "teacher": "Rija", "room": "HT-09" },
+        { "day": "Mon", "periods": [5], "componentId": "tech-writing", "teacher": "TBA (TRW)", "room": "HT-09" },
+        { "day": "Mon", "periods": [6], "componentId": "compiler-const", "teacher": "Anum", "room": "HT-09" },
+        { "day": "Wed", "periods": [1, 2, 3], "componentId": "web-eng-lab", "teacher": "Rahil", "room": "HFT-04" },
+        { "day": "Wed", "periods": [4], "componentId": "prob-stats", "teacher": "Ahsan", "room": "HT-08" },
+        { "day": "Wed", "periods": [5], "componentId": "compiler-const", "teacher": "Anum", "room": "HT-08" },
+        { "day": "Wed", "periods": [6], "componentId": "enterprise-sys", "teacher": "Muneeb", "room": "HT-08" },
+        { "day": "Thu", "periods": [1], "componentId": "enterprise-sys", "teacher": "Muneeb", "room": "HT-07" },
+        { "day": "Thu", "periods": [2], "componentId": "web-eng-theory", "teacher": "Mohsin", "room": "HT-07" },
+        { "day": "Thu", "periods": [3], "componentId": "comp-net-theory", "teacher": "Rija", "room": "HT-07" },
+        { "day": "Thu", "periods": [4], "componentId": "prob-stats", "teacher": "Ahsan", "room": "HT-07" },
+        { "day": "Fri", "periods": [1], "componentId": "enterprise-sys", "teacher": "Muneeb", "room": "HT-08" },
+        { "day": "Fri", "periods": [2], "componentId": "web-eng-theory", "teacher": "Mohsin", "room": "HT-08" },
+        { "day": "Fri", "periods": [3], "componentId": "tech-writing", "teacher": "TBA (TRW)", "room": "HT-08" },
+        { "day": "Fri", "periods": [4], "componentId": "prob-stats", "teacher": "Ahsan", "room": "HT-08" },
+        { "day": "Fri", "periods": [5], "componentId": "comp-net-theory", "teacher": "Rija", "room": "HT-08" },
+        { "day": "Fri", "periods": [6], "componentId": "compiler-const", "teacher": "Anum", "room": "HT-08" }
+      ]
+    },
+    {
+      "id": "D",
+      "name": "Section CS5D",
+      "slots": [
+        { "day": "Tue", "periods": [1, 2, 3], "componentId": "comp-net-lab", "teacher": "Marium", "room": "HFT-04" },
+        { "day": "Tue", "periods": [4], "componentId": "compiler-const", "teacher": "Mehwish W", "room": "HT-08" },
+        { "day": "Tue", "periods": [5], "componentId": "enterprise-sys", "teacher": "Muneeb", "room": "HT-08" },
+        { "day": "Tue", "periods": [6], "componentId": "comp-net-theory", "teacher": "Lal", "room": "HT-08" },
+        { "day": "Wed", "periods": [7], "componentId": "comp-net-theory", "teacher": "Lal", "room": "HT-07" },
+        { "day": "Wed", "periods": [8], "componentId": "compiler-const", "teacher": "Mehwish W", "room": "HT-07" },
+        { "day": "Wed", "periods": [9], "componentId": "prob-stats", "teacher": "Ahsan", "room": "HT-07" },
+        { "day": "Wed", "periods": [10, 11], "componentId": "tech-writing", "teacher": "TBA (TRW)", "room": "HT-07" },
+        { "day": "Thu", "periods": [1, 2, 3], "componentId": "web-eng-lab", "teacher": "Rahil", "room": "HFT-04" },
+        { "day": "Thu", "periods": [4], "componentId": "enterprise-sys", "teacher": "Muneeb", "room": "HT-09" },
+        { "day": "Thu", "periods": [5], "componentId": "web-eng-theory", "teacher": "Natalia", "room": "HT-09" },
+        { "day": "Thu", "periods": [6], "componentId": "comp-net-theory", "teacher": "Lal", "room": "HT-09" },
+        { "day": "Fri", "periods": [1, 2], "componentId": "prob-stats", "teacher": "Ahsan", "room": "HT-09" },
+        { "day": "Fri", "periods": [3], "componentId": "enterprise-sys", "teacher": "Muneeb", "room": "HT-09" },
+        { "day": "Fri", "periods": [4], "componentId": "web-eng-theory", "teacher": "Natalia", "room": "HT-09" },
+        { "day": "Fri", "periods": [5], "componentId": "compiler-const", "teacher": "Mehwish W", "room": "HT-09" }
+      ]
+    },
+    {
+      "id": "E",
+      "name": "Section CS5E",
+      "slots": [
+        { "day": "Mon", "periods": [7], "componentId": "compiler-const", "teacher": "Mehwish W", "room": "HFT-12" },
+        { "day": "Mon", "periods": [8, 9], "componentId": "enterprise-sys", "teacher": "Muneeb", "room": "HFT-12" },
+        { "day": "Mon", "periods": [10], "componentId": "tech-writing", "teacher": "TBA (TRW)", "room": "HFT-12" },
+        { "day": "Mon", "periods": [11], "componentId": "prob-stats", "teacher": "TBA (ProbStat)", "room": "HFT-12" },
+        { "day": "Tue", "periods": [1, 2], "componentId": "web-eng-theory", "teacher": "Natalia", "room": "HT-09" },
+        { "day": "Tue", "periods": [3, 4], "componentId": "comp-net-theory", "teacher": "Lal", "room": "HT-09" },
+        { "day": "Tue", "periods": [5], "componentId": "compiler-const", "teacher": "Mehwish W", "room": "HT-09" },
+        { "day": "Tue", "periods": [6], "componentId": "prob-stats", "teacher": "TBA (ProbStat)", "room": "HT-09" },
+        { "day": "Wed", "periods": [7], "componentId": "prob-stats", "teacher": "TBA (ProbStat)", "room": "HT-08" },
+        { "day": "Wed", "periods": [8], "componentId": "tech-writing", "teacher": "TBA (TRW)", "room": "HT-08" },
+        { "day": "Wed", "periods": [9], "componentId": "comp-net-theory", "teacher": "Lal", "room": "HT-08" },
+        { "day": "Wed", "periods": [10], "componentId": "enterprise-sys", "teacher": "Muneeb", "room": "HT-08" },
+        { "day": "Wed", "periods": [11], "componentId": "compiler-const", "teacher": "Mehwish W", "room": "HT-08" },
+        { "day": "Fri", "periods": [1, 2, 3], "componentId": "comp-net-lab", "teacher": "Marium", "room": "HFT-04" },
+        { "day": "Fri", "periods": [4, 5, 6], "componentId": "web-eng-lab", "teacher": "Rahil", "room": "HFT-04" }
+      ]
+    },
+    {
+      "id": "F",
+      "name": "Section CS5F",
+      "slots": [
+        { "day": "Mon", "periods": [4, 5], "componentId": "comp-net-theory", "teacher": "Lal", "room": "HFT-09" },
+        { "day": "Mon", "periods": [6], "componentId": "enterprise-sys", "teacher": "Muneeb", "room": "HFT-09" },
+        { "day": "Mon", "periods": [7, 8, 9], "componentId": "web-eng-lab", "teacher": "Rahil", "room": "HFT-04" },
+        { "day": "Wed", "periods": [1, 2], "componentId": "web-eng-theory", "teacher": "Natalia", "room": "HT-09" },
+        { "day": "Wed", "periods": [3], "componentId": "prob-stats", "teacher": "TBA (ProbStat)", "room": "HT-09" },
+        { "day": "Wed", "periods": [4], "componentId": "enterprise-sys", "teacher": "Muneeb", "room": "HT-09" },
+        { "day": "Wed", "periods": [5], "componentId": "compiler-const", "teacher": "Mehwish W", "room": "HT-09" },
+        { "day": "Thu", "periods": [5], "componentId": "comp-net-theory", "teacher": "Lal", "room": "HFT-09" },
+        { "day": "Thu", "periods": [6], "componentId": "compiler-const", "teacher": "Mehwish W", "room": "HFT-09" },
+        { "day": "Thu", "periods": [7, 8, 9], "componentId": "comp-net-lab", "teacher": "Marium", "room": "HFT-04" },
+        { "day": "Thu", "periods": [10], "componentId": "prob-stats", "teacher": "TBA (ProbStat)", "room": "HT-08" },
+        { "day": "Fri", "periods": [2], "componentId": "prob-stats", "teacher": "TBA (ProbStat)", "room": "HFT-09" },
+        { "day": "Fri", "periods": [3], "componentId": "compiler-const", "teacher": "Mehwish W", "room": "HFT-09" },
+        { "day": "Fri", "periods": [4], "componentId": "enterprise-sys", "teacher": "Muneeb", "room": "HFT-09" },
+        { "day": "Fri", "periods": [5, 6], "componentId": "tech-writing", "teacher": "TBA (TRW)", "room": "HFT-09" }
+      ]
+    }
+  ]
+}

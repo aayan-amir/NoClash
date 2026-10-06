@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": "2026-10-06.1",
+  "semesters": [
+    {
+      "id": "5",
+      "label": "5th Semester",
+      "file": "/data/semester-5.json"
+    }
+  ]
+}
