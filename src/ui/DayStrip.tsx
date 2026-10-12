@@ -7,7 +7,7 @@ interface DayStripProps {
   activeColor?: string;
 }
 
-const ALL_DAYS: Day[] = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
+const ALL_DAYS: Day[] = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 export const DayStrip: React.FC<DayStripProps> = ({
   dayMask,

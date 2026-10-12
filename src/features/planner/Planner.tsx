@@ -425,10 +425,20 @@ export const Planner: React.FC<PlannerProps> = ({ semesterId, shareHash }) => {
       {/* Persistent Top Navigation Bar */}
       <header className="border-b border-rule bg-ground px-3 sm:px-4 py-1 sm:py-2.5 landscape:py-1 flex items-center justify-between shrink-0 z-10">
         <div className="flex items-center gap-1.5 sm:gap-3">
-          <h1 className="text-base sm:text-xl font-display font-bold tracking-tight">{copy.app.name}</h1>
-          <span className="text-[10px] sm:text-xs px-1.5 py-0.5 rounded bg-ground-sunk border border-rule text-ink-soft">
-            {semester.semester.label}
-          </span>
+          <button
+            onClick={() => navigate('/')}
+            className="text-base sm:text-xl font-display font-bold tracking-tight hover:opacity-80 transition-opacity"
+            title="Switch semester"
+          >
+            {copy.app.name}
+          </button>
+          <button
+            onClick={() => navigate('/')}
+            className="text-[10px] sm:text-xs px-1.5 py-0.5 rounded bg-ground-sunk border border-rule text-ink-soft hover:border-ink hover:text-ink transition-colors"
+            title="Switch semester"
+          >
+            {semester.semester.label} ▾
+          </button>
           {usingSavedData && (
             <span className="text-xs text-ink-soft hidden sm:inline">
               {copy.planner.usingSavedData}

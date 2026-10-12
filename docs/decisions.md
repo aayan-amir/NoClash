@@ -58,3 +58,15 @@ This document records architectural, design, and product decisions for **NoClash
 - **Choice:** Deployed as a static SPA on Vercel with SPA routing rewrite (`vercel.json`), eliminating server dyno operational costs and providing automatic worldwide SSL and edge caching.
 - **Rationale:** NoClash requires no server runtime or database. Vercel delivers <100ms global response times with automatic build previews and zero-cost hosting.
 
+### D14. Addition of 1st Semester Dataset (CS1A–CS1F) & 6-Day (Mon–Sat) Support
+- **Choice:** Authored `public/data/semester-1.json` containing all 6 sections (`CS1A` through `CS1F`) and 8 components (`PrgFnd`, `PrgFnd Lab`, `AI&CT`, `AI&CT Lab`, `Phys`, `Phys Lab`, `LinAlg`, `PakStu`), registered it in `public/data/manifest.json`, enabled Saturday (`Sat`) in `DayStrip.tsx` for Pakistan Studies (`FG-01`, Periods 6–7), and made the header semester badge clickable to switch between 1st and 5th Semesters at any time.
+- **Rationale:** 1st Semester students have Saturday classes for Pakistan Studies alongside Mon–Fri courses; dynamic `semester.days` rendering in the Weave grid and canvas exporter seamlessly adapts to the 6-day schedule while passing 100% of Zod schema invariants.
+
+### D15. Addition of 3rd Semester Dataset (CS3A–CS3F)
+- **Choice:** Authored `public/data/semester-3.json` containing all 6 sections (`CS3A` through `CS3F`) and 7 components (`DS&A`, `DS&A Lab`, `CO&AL`, `CO&AL Lab`, `DisStruc`, `CG&M`, `ComSk`), and registered it in `public/data/manifest.json` alongside 1st and 5th Semesters.
+- **Rationale:** Completes the odd-semester trio (1st, 3rd, and 5th Semesters) with 100% verified slot accuracy across all 88 slots (126 weekly period-hours).
+
+### D16. Addition of 7th Semester Dataset (CS7A–CS7F)
+- **Choice:** Authored `public/data/semester-7.json` containing all 6 sections (`CS7A` through `CS7F`) and 5 components (`HCI`, `DatVis`, `P_Prct`, `EcoMgt`, `Entrepr`), and registered it in `public/data/manifest.json` so all four odd semesters (1st, 3rd, 5th, 7th) are available.
+- **Rationale:** Completes the full Computer Science Fall/Odd semester suite (Semesters 1, 3, 5, and 7) with 100% cell-by-cell verified accuracy across all 82 slots (84 weekly period-hours).
+

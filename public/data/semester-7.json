@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": "2026-10-12.1",
+  "institution": "Sir Syed University of Engineering and Technology, Karachi",
+  "department": "Faculty of Computing & Applied Sciences",
+  "semester": {
+    "id": "7",
+    "label": "7th Semester"
+  },
+  "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+  "periods": [
+    { "id": 1, "start": "08:00", "end": "08:50" },
+    { "id": 2, "start": "08:50", "end": "09:40" },
+    { "id": 3, "start": "09:40", "end": "10:30" },
+    { "id": 4, "start": "10:30", "end": "11:20" },
+    { "id": 5, "start": "11:20", "end": "12:10" },
+    { "id": 6, "start": "12:10", "end": "13:00" },
+    { "id": 7, "start": "13:00", "end": "13:50" },
+    { "id": 8, "start": "13:50", "end": "14:40" },
+    { "id": 9, "start": "14:40", "end": "15:30" },
+    { "id": 10, "start": "15:30", "end": "16:20" },
+    { "id": 11, "start": "16:20", "end": "17:10" },
+    { "id": 12, "start": "17:10", "end": "18:00" }
+  ],
+  "components": [
+    {
+      "id": "hci",
+      "subjectId": "hci",
+      "subjectName": "Human Computer Interaction",
+      "kind": "single",
+      "code": "HCI"
+    },
+    {
+      "id": "data-vis",
+      "subjectId": "data-vis",
+      "subjectName": "Data Visualization",
+      "kind": "single",
+      "code": "DatVis"
+    },
+    {
+      "id": "prof-practices",
+      "subjectId": "prof-practices",
+      "subjectName": "Professional Practices",
+      "kind": "single",
+      "code": "P_Prct"
+    },
+    {
+      "id": "eco-mgt",
+      "subjectId": "eco-mgt",
+      "subjectName": "Economics & Management",
+      "kind": "single",
+      "code": "EcoMgt"
+    },
+    {
+      "id": "entrepreneurship",
+      "subjectId": "entrepreneurship",
+      "subjectName": "Entrepreneurship",
+      "kind": "single",
+      "code": "Entrepr"
+    }
+  ],
+  "requiredComponentIds": [
+    "hci",
+    "data-vis",
+    "prof-practices",
+    "eco-mgt",
+    "entrepreneurship"
+  ],
+  "sections": [
+    {
+      "id": "A",
+      "name": "Section CS7A",
+      "slots": [
+        { "day": "Tue", "periods": [1], "componentId": "hci", "teacher": "Farhana", "room": "HT-08" },
+        { "day": "Tue", "periods": [2], "componentId": "data-vis", "teacher": "Anand", "room": "HT-08" },
+        { "day": "Tue", "periods": [3], "componentId": "prof-practices", "teacher": "Faraz", "room": "HT-08" },
+        { "day": "Tue", "periods": [4], "componentId": "eco-mgt", "teacher": "A. Mirza", "room": "HT-07" },
+        { "day": "Wed", "periods": [1], "componentId": "entrepreneurship", "teacher": "A. Urooj", "room": "HFT-12" },
+        { "day": "Wed", "periods": [2], "componentId": "hci", "teacher": "Farhana", "room": "HFT-12" },
+        { "day": "Wed", "periods": [3], "componentId": "eco-mgt", "teacher": "A. Mirza", "room": "HFT-12" },
+        { "day": "Wed", "periods": [4], "componentId": "data-vis", "teacher": "Anand", "room": "HFT-12" },
+        { "day": "Wed", "periods": [5], "componentId": "prof-practices", "teacher": "Faraz", "room": "HFT-12" },
+        { "day": "Thu", "periods": [6], "componentId": "entrepreneurship", "teacher": "A. Urooj", "room": "HT-07" },
+        { "day": "Thu", "periods": [7], "componentId": "eco-mgt", "teacher": "A. Mirza", "room": "HT-07" },
+        { "day": "Thu", "periods": [8], "componentId": "data-vis", "teacher": "Anand", "room": "HT-07" },
+        { "day": "Thu", "periods": [9], "componentId": "prof-practices", "teacher": "Faraz", "room": "HT-07" },
+        { "day": "Thu", "periods": [10], "componentId": "hci", "teacher": "Farhana", "room": "HT-07" }
+      ]
+    },
+    {
+      "id": "B",
+      "name": "Section CS7B",
+      "slots": [
+        { "day": "Mon", "periods": [6], "componentId": "hci", "teacher": "Farhana", "room": "HT-07" },
+        { "day": "Mon", "periods": [7], "componentId": "prof-practices", "teacher": "Faraz", "room": "HT-07" },
+        { "day": "Mon", "periods": [8], "componentId": "data-vis", "teacher": "Anand", "room": "HT-07" },
+        { "day": "Mon", "periods": [9], "componentId": "eco-mgt", "teacher": "A. Mirza", "room": "HT-07" },
+        { "day": "Tue", "periods": [6], "componentId": "hci", "teacher": "Farhana", "room": "HFT-09" },
+        { "day": "Tue", "periods": [7], "componentId": "prof-practices", "teacher": "Faraz", "room": "HFT-09" },
+        { "day": "Tue", "periods": [8], "componentId": "data-vis", "teacher": "Anand", "room": "HFT-09" },
+        { "day": "Tue", "periods": [9], "componentId": "eco-mgt", "teacher": "A. Mirza", "room": "HFT-09" },
+        { "day": "Tue", "periods": [10], "componentId": "entrepreneurship", "teacher": "A. Urooj", "room": "HFT-09" },
+        { "day": "Wed", "periods": [6], "componentId": "hci", "teacher": "Farhana", "room": "HT-09" },
+        { "day": "Wed", "periods": [7], "componentId": "prof-practices", "teacher": "Faraz", "room": "HT-09" },
+        { "day": "Wed", "periods": [8], "componentId": "entrepreneurship", "teacher": "A. Urooj", "room": "HT-09" },
+        { "day": "Wed", "periods": [9], "componentId": "eco-mgt", "teacher": "A. Mirza", "room": "HT-09" },
+        { "day": "Wed", "periods": [10], "componentId": "data-vis", "teacher": "Anand", "room": "HT-09" }
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Section CS7C",
+      "slots": [
+        { "day": "Mon", "periods": [7], "componentId": "entrepreneurship", "teacher": "A. Urooj", "room": "HT-08" },
+        { "day": "Mon", "periods": [8], "componentId": "hci", "teacher": "Farhana", "room": "HT-08" },
+        { "day": "Mon", "periods": [9], "componentId": "prof-practices", "teacher": "Faraz", "room": "HT-08" },
+        { "day": "Mon", "periods": [10], "componentId": "data-vis", "teacher": "Anand", "room": "HT-08" },
+        { "day": "Mon", "periods": [11], "componentId": "eco-mgt", "teacher": "A. Mirza", "room": "HT-08" },
+        { "day": "Thu", "periods": [8], "componentId": "hci", "teacher": "Farhana", "room": "HT-09" },
+        { "day": "Thu", "periods": [9], "componentId": "eco-mgt", "teacher": "A. Mirza", "room": "HT-09" },
+        { "day": "Thu", "periods": [10], "componentId": "data-vis", "teacher": "Anand", "room": "HT-09" },
+        { "day": "Thu", "periods": [11], "componentId": "prof-practices", "teacher": "Faraz", "room": "HT-09" },
+        { "day": "Fri", "periods": [2], "componentId": "entrepreneurship", "teacher": "A. Urooj", "room": "HT-07" },
+        { "day": "Fri", "periods": [3], "componentId": "eco-mgt", "teacher": "A. Mirza", "room": "HT-07" },
+        { "day": "Fri", "periods": [4], "componentId": "data-vis", "teacher": "Anand", "room": "HT-07" },
+        { "day": "Fri", "periods": [5], "componentId": "prof-practices", "teacher": "Faraz", "room": "HT-07" },
+        { "day": "Fri", "periods": [6], "componentId": "hci", "teacher": "Farhana", "room": "HT-07" }
+      ]
+    },
+    {
+      "id": "D",
+      "name": "Section CS7D",
+      "slots": [
+        { "day": "Mon", "periods": [7], "componentId": "data-vis", "teacher": "Anand", "room": "HT-09" },
+        { "day": "Mon", "periods": [8], "componentId": "eco-mgt", "teacher": "Fawad", "room": "HT-09" },
+        { "day": "Mon", "periods": [9], "componentId": "entrepreneurship", "teacher": "Anam", "room": "HT-09" },
+        { "day": "Mon", "periods": [10], "componentId": "hci", "teacher": "Farhana", "room": "HT-09" },
+        { "day": "Mon", "periods": [11], "componentId": "prof-practices", "teacher": "Faraz", "room": "HT-09" },
+        { "day": "Tue", "periods": [7], "componentId": "hci", "teacher": "Farhana", "room": "HT-08" },
+        { "day": "Tue", "periods": [8], "componentId": "prof-practices", "teacher": "Faraz", "room": "HT-08" },
+        { "day": "Tue", "periods": [9], "componentId": "data-vis", "teacher": "Anand", "room": "HT-08" },
+        { "day": "Tue", "periods": [10, 11], "componentId": "eco-mgt", "teacher": "Fawad", "room": "HT-08" },
+        { "day": "Thu", "periods": [1], "componentId": "entrepreneurship", "teacher": "Anam", "room": "HFT-09" },
+        { "day": "Thu", "periods": [2], "componentId": "data-vis", "teacher": "Anand", "room": "HFT-09" },
+        { "day": "Thu", "periods": [3], "componentId": "hci", "teacher": "Farhana", "room": "HFT-09" },
+        { "day": "Thu", "periods": [4], "componentId": "prof-practices", "teacher": "Faraz", "room": "HFT-09" }
+      ]
+    },
+    {
+      "id": "E",
+      "name": "Section CS7E",
+      "slots": [
+        { "day": "Tue", "periods": [8], "componentId": "eco-mgt", "teacher": "Fawad", "room": "HFT-12" },
+        { "day": "Tue", "periods": [9], "componentId": "hci", "teacher": "Umair", "room": "HFT-12" },
+        { "day": "Tue", "periods": [10], "componentId": "prof-practices", "teacher": "TBA (P_Prct)", "room": "HFT-12" },
+        { "day": "Tue", "periods": [11], "componentId": "data-vis", "teacher": "Umair", "room": "HFT-12" },
+        { "day": "Wed", "periods": [7], "componentId": "data-vis", "teacher": "Umair", "room": "HFT-12" },
+        { "day": "Wed", "periods": [8], "componentId": "hci", "teacher": "Umair", "room": "HFT-12" },
+        { "day": "Wed", "periods": [9], "componentId": "entrepreneurship", "teacher": "Anam", "room": "HFT-12" },
+        { "day": "Wed", "periods": [10], "componentId": "eco-mgt", "teacher": "Fawad", "room": "HFT-12" },
+        { "day": "Wed", "periods": [11], "componentId": "prof-practices", "teacher": "TBA (P_Prct)", "room": "HFT-12" },
+        { "day": "Thu", "periods": [7], "componentId": "prof-practices", "teacher": "TBA (P_Prct)", "room": "HFT-09" },
+        { "day": "Thu", "periods": [8], "componentId": "entrepreneurship", "teacher": "Anam", "room": "HFT-09" },
+        { "day": "Thu", "periods": [9], "componentId": "eco-mgt", "teacher": "Fawad", "room": "HFT-09" },
+        { "day": "Thu", "periods": [10], "componentId": "hci", "teacher": "Umair", "room": "HFT-09" },
+        { "day": "Thu", "periods": [11], "componentId": "data-vis", "teacher": "Umair", "room": "HFT-09" }
+      ]
+    },
+    {
+      "id": "F",
+      "name": "Section CS7F",
+      "slots": [
+        { "day": "Mon", "periods": [7], "componentId": "eco-mgt", "teacher": "Fawad", "room": "HFT-09" },
+        { "day": "Mon", "periods": [8, 9], "componentId": "data-vis", "teacher": "Umair", "room": "HFT-09" },
+        { "day": "Mon", "periods": [10], "componentId": "prof-practices", "teacher": "TBA (P_Prct)", "room": "HFT-09" },
+        { "day": "Mon", "periods": [11], "componentId": "hci", "teacher": "Umair", "room": "HFT-09" },
+        { "day": "Tue", "periods": [7], "componentId": "eco-mgt", "teacher": "Fawad", "room": "HT-09" },
+        { "day": "Tue", "periods": [8], "componentId": "hci", "teacher": "Umair", "room": "HT-09" },
+        { "day": "Tue", "periods": [9], "componentId": "prof-practices", "teacher": "TBA (P_Prct)", "room": "HT-09" },
+        { "day": "Tue", "periods": [10], "componentId": "entrepreneurship", "teacher": "Anam", "room": "HT-09" },
+        { "day": "Fri", "periods": [2], "componentId": "entrepreneurship", "teacher": "Anam", "room": "HFT-12" },
+        { "day": "Fri", "periods": [3], "componentId": "hci", "teacher": "Umair", "room": "HFT-12" },
+        { "day": "Fri", "periods": [4], "componentId": "eco-mgt", "teacher": "Fawad", "room": "HFT-12" },
+        { "day": "Fri", "periods": [5], "componentId": "data-vis", "teacher": "Umair", "room": "HFT-12" },
+        { "day": "Fri", "periods": [6], "componentId": "prof-practices", "teacher": "TBA (P_Prct)", "room": "HFT-12" }
+      ]
+    }
+  ]
+}

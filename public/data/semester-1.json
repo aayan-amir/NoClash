@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": "2026-10-12.1",
+  "institution": "Sir Syed University of Engineering and Technology, Karachi",
+  "department": "Faculty of Computing & Applied Sciences",
+  "semester": {
+    "id": "1",
+    "label": "1st Semester"
+  },
+  "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+  "periods": [
+    { "id": 1, "start": "08:00", "end": "08:50" },
+    { "id": 2, "start": "08:50", "end": "09:40" },
+    { "id": 3, "start": "09:40", "end": "10:30" },
+    { "id": 4, "start": "10:30", "end": "11:20" },
+    { "id": 5, "start": "11:20", "end": "12:10" },
+    { "id": 6, "start": "12:10", "end": "13:00" },
+    { "id": 7, "start": "13:00", "end": "13:50" },
+    { "id": 8, "start": "13:50", "end": "14:40" },
+    { "id": 9, "start": "14:40", "end": "15:30" },
+    { "id": 10, "start": "15:30", "end": "16:20" },
+    { "id": 11, "start": "16:20", "end": "17:10" },
+    { "id": 12, "start": "17:10", "end": "18:00" }
+  ],
+  "components": [
+    {
+      "id": "prog-fund-theory",
+      "subjectId": "prog-fund",
+      "subjectName": "Programming Fundamentals",
+      "kind": "theory",
+      "code": "PrgFnd"
+    },
+    {
+      "id": "prog-fund-lab",
+      "subjectId": "prog-fund",
+      "subjectName": "Programming Fundamentals",
+      "kind": "practical",
+      "code": "PrgFnd Lab"
+    },
+    {
+      "id": "aict-theory",
+      "subjectId": "aict",
+      "subjectName": "Application of ICT",
+      "kind": "theory",
+      "code": "AI&CT"
+    },
+    {
+      "id": "aict-lab",
+      "subjectId": "aict",
+      "subjectName": "Application of ICT",
+      "kind": "practical",
+      "code": "AI&CT Lab"
+    },
+    {
+      "id": "physics-theory",
+      "subjectId": "physics",
+      "subjectName": "Applied Physics",
+      "kind": "theory",
+      "code": "Phys"
+    },
+    {
+      "id": "physics-lab",
+      "subjectId": "physics",
+      "subjectName": "Applied Physics",
+      "kind": "practical",
+      "code": "Phys Lab"
+    },
+    {
+      "id": "linear-algebra",
+      "subjectId": "linear-algebra",
+      "subjectName": "Linear Algebra",
+      "kind": "single",
+      "code": "LinAlg"
+    },
+    {
+      "id": "pak-studies",
+      "subjectId": "pak-studies",
+      "subjectName": "Pakistan Studies",
+      "kind": "single",
+      "code": "PakStu"
+    }
+  ],
+  "requiredComponentIds": [
+    "prog-fund-theory",
+    "prog-fund-lab",
+    "aict-theory",
+    "aict-lab",
+    "physics-theory",
+    "physics-lab",
+    "linear-algebra",
+    "pak-studies"
+  ],
+  "sections": [
+    {
+      "id": "A",
+      "name": "Section CS1A",
+      "slots": [
+        { "day": "Mon", "periods": [4], "componentId": "physics-theory", "teacher": "TBA (Phys)", "room": "HS-01" },
+        { "day": "Mon", "periods": [5], "componentId": "linear-algebra", "teacher": "Sarwar", "room": "HS-01" },
+        { "day": "Mon", "periods": [6], "componentId": "prog-fund-theory", "teacher": "Haris", "room": "HS-01" },
+        { "day": "Mon", "periods": [7, 8, 9], "componentId": "physics-lab", "teacher": "Fazal", "room": "HT-04" },
+        { "day": "Tue", "periods": [4, 5, 6], "componentId": "prog-fund-lab", "teacher": "A. Khaliq", "room": "HFT-06" },
+        { "day": "Tue", "periods": [7], "componentId": "linear-algebra", "teacher": "Sarwar", "room": "HS-01" },
+        { "day": "Tue", "periods": [8], "componentId": "prog-fund-theory", "teacher": "Haris", "room": "HS-01" },
+        { "day": "Tue", "periods": [9, 10], "componentId": "physics-theory", "teacher": "TBA (Phys)", "room": "HS-01" },
+        { "day": "Wed", "periods": [4, 5, 6], "componentId": "aict-lab", "teacher": "Aliza", "room": "HT-11" },
+        { "day": "Wed", "periods": [7], "componentId": "linear-algebra", "teacher": "Sarwar", "room": "HS-01" },
+        { "day": "Wed", "periods": [8], "componentId": "prog-fund-theory", "teacher": "Haris", "room": "HS-01" },
+        { "day": "Wed", "periods": [9, 10], "componentId": "aict-theory", "teacher": "Fozia", "room": "HS-01" },
+        { "day": "Sat", "periods": [6, 7], "componentId": "pak-studies", "teacher": "F. Naz", "room": "FG-01" }
+      ]
+    },
+    {
+      "id": "B",
+      "name": "Section CS1B",
+      "slots": [
+        { "day": "Mon", "periods": [4], "componentId": "prog-fund-theory", "teacher": "Haris", "room": "HFT-01" },
+        { "day": "Mon", "periods": [5], "componentId": "aict-theory", "teacher": "Fozia", "room": "HFT-01" },
+        { "day": "Mon", "periods": [6], "componentId": "linear-algebra", "teacher": "Sarwar", "room": "HFT-01" },
+        { "day": "Mon", "periods": [7, 8, 9], "componentId": "prog-fund-lab", "teacher": "A. Khaliq", "room": "HFT-06" },
+        { "day": "Mon", "periods": [10], "componentId": "physics-theory", "teacher": "TBA (Phys)", "room": "HFT-01" },
+        { "day": "Tue", "periods": [1, 2, 3], "componentId": "aict-lab", "teacher": "Aliza", "room": "HT-11" },
+        { "day": "Tue", "periods": [4], "componentId": "aict-theory", "teacher": "Fozia", "room": "HS-01" },
+        { "day": "Tue", "periods": [5], "componentId": "physics-theory", "teacher": "TBA (Phys)", "room": "HS-01" },
+        { "day": "Tue", "periods": [6], "componentId": "prog-fund-theory", "teacher": "Haris", "room": "HS-01" },
+        { "day": "Thu", "periods": [4], "componentId": "physics-theory", "teacher": "TBA (Phys)", "room": "HFT-01" },
+        { "day": "Thu", "periods": [5, 6], "componentId": "linear-algebra", "teacher": "Sarwar", "room": "HFT-01" },
+        { "day": "Thu", "periods": [7, 8, 9], "componentId": "physics-lab", "teacher": "Fazal", "room": "HT-04" },
+        { "day": "Thu", "periods": [10], "componentId": "prog-fund-theory", "teacher": "Haris", "room": "HFT-10" },
+        { "day": "Sat", "periods": [6, 7], "componentId": "pak-studies", "teacher": "F. Naz", "room": "FG-01" }
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Section CS1C",
+      "slots": [
+        { "day": "Mon", "periods": [4, 5, 6], "componentId": "aict-lab", "teacher": "Aliza", "room": "HT-11" },
+        { "day": "Mon", "periods": [7], "componentId": "prog-fund-theory", "teacher": "S. Ejaz", "room": "HS-01" },
+        { "day": "Mon", "periods": [8], "componentId": "linear-algebra", "teacher": "Sarwar", "room": "HS-01" },
+        { "day": "Mon", "periods": [9], "componentId": "physics-theory", "teacher": "TBA (Phys)", "room": "HS-01" },
+        { "day": "Mon", "periods": [10], "componentId": "aict-theory", "teacher": "Fozia", "room": "HS-01" },
+        { "day": "Tue", "periods": [1], "componentId": "aict-theory", "teacher": "Fozia", "room": "HS-01" },
+        { "day": "Tue", "periods": [2], "componentId": "prog-fund-theory", "teacher": "S. Ejaz", "room": "HS-01" },
+        { "day": "Tue", "periods": [3], "componentId": "linear-algebra", "teacher": "Sarwar", "room": "HS-01" },
+        { "day": "Tue", "periods": [4, 5, 6], "componentId": "physics-lab", "teacher": "Fazal", "room": "HT-04" },
+        { "day": "Wed", "periods": [4], "componentId": "linear-algebra", "teacher": "Sarwar", "room": "HS-01" },
+        { "day": "Wed", "periods": [5, 6], "componentId": "physics-theory", "teacher": "TBA (Phys)", "room": "HS-01" },
+        { "day": "Wed", "periods": [7, 8, 9], "componentId": "prog-fund-lab", "teacher": "A. Khaliq", "room": "HFT-06" },
+        { "day": "Wed", "periods": [10], "componentId": "prog-fund-theory", "teacher": "S. Ejaz", "room": "HFT-07" },
+        { "day": "Sat", "periods": [6, 7], "componentId": "pak-studies", "teacher": "F. Naz", "room": "FG-01" }
+      ]
+    },
+    {
+      "id": "D",
+      "name": "Section CS1D",
+      "slots": [
+        { "day": "Wed", "periods": [1], "componentId": "linear-algebra", "teacher": "Sarwar", "room": "HS-01" },
+        { "day": "Wed", "periods": [2, 3], "componentId": "prog-fund-theory", "teacher": "S. Ejaz", "room": "HS-01" },
+        { "day": "Wed", "periods": [4, 5, 6], "componentId": "physics-lab", "teacher": "Fazal", "room": "HT-04" },
+        { "day": "Wed", "periods": [7], "componentId": "physics-theory", "teacher": "TBA (Phys)", "room": "HFT-01" },
+        { "day": "Thu", "periods": [4, 5, 6], "componentId": "prog-fund-lab", "teacher": "A. Khaliq", "room": "HFT-06" },
+        { "day": "Thu", "periods": [7], "componentId": "physics-theory", "teacher": "TBA (Phys)", "room": "HFT-01" },
+        { "day": "Thu", "periods": [8, 9], "componentId": "aict-theory", "teacher": "Fozia", "room": "HFT-01" },
+        { "day": "Thu", "periods": [10], "componentId": "linear-algebra", "teacher": "Sarwar", "room": "HFT-01" },
+        { "day": "Fri", "periods": [1, 2, 3], "componentId": "aict-lab", "teacher": "Aliza", "room": "HT-11" },
+        { "day": "Fri", "periods": [4], "componentId": "physics-theory", "teacher": "TBA (Phys)", "room": "HS-01" },
+        { "day": "Fri", "periods": [5], "componentId": "linear-algebra", "teacher": "Sarwar", "room": "HS-01" },
+        { "day": "Fri", "periods": [6], "componentId": "prog-fund-theory", "teacher": "S. Ejaz", "room": "HS-01" },
+        { "day": "Sat", "periods": [6, 7], "componentId": "pak-studies", "teacher": "F. Naz", "room": "FG-01" }
+      ]
+    },
+    {
+      "id": "E",
+      "name": "Section CS1E",
+      "slots": [
+        { "day": "Mon", "periods": [1, 2], "componentId": "linear-algebra", "teacher": "TBA (LinAlg)", "room": "HS-01" },
+        { "day": "Mon", "periods": [3], "componentId": "prog-fund-theory", "teacher": "S. Ejaz", "room": "HS-01" },
+        { "day": "Mon", "periods": [4, 5, 6], "componentId": "physics-lab", "teacher": "TBA (Phys Lab)", "room": "HT-04" },
+        { "day": "Mon", "periods": [7], "componentId": "aict-theory", "teacher": "F. Madiha", "room": "HFT-01" },
+        { "day": "Thu", "periods": [1, 2, 3], "componentId": "aict-lab", "teacher": "Aliza", "room": "HT-11" },
+        { "day": "Thu", "periods": [4], "componentId": "prog-fund-theory", "teacher": "S. Ejaz", "room": "HFT-10" },
+        { "day": "Thu", "periods": [5], "componentId": "physics-theory", "teacher": "TBA (Phys)", "room": "HFT-10" },
+        { "day": "Thu", "periods": [6], "componentId": "linear-algebra", "teacher": "TBA (LinAlg)", "room": "HFT-10" },
+        { "day": "Thu", "periods": [7], "componentId": "aict-theory", "teacher": "F. Madiha", "room": "HFT-10" },
+        { "day": "Fri", "periods": [4, 5, 6], "componentId": "prog-fund-lab", "teacher": "A. Khaliq", "room": "HFT-06" },
+        { "day": "Fri", "periods": [9], "componentId": "prog-fund-theory", "teacher": "S. Ejaz", "room": "HS-01" },
+        { "day": "Fri", "periods": [10, 11], "componentId": "physics-theory", "teacher": "TBA (Phys)", "room": "HS-01" },
+        { "day": "Sat", "periods": [6, 7], "componentId": "pak-studies", "teacher": "F. Naz", "room": "FG-01" }
+      ]
+    },
+    {
+      "id": "F",
+      "name": "Section CS1F",
+      "slots": [
+        { "day": "Mon", "periods": [4], "componentId": "linear-algebra", "teacher": "TBA (LinAlg)", "room": "HFT-10" },
+        { "day": "Mon", "periods": [5, 6], "componentId": "physics-theory", "teacher": "TBA (Phys)", "room": "HFT-10" },
+        { "day": "Mon", "periods": [7, 8, 9], "componentId": "aict-lab", "teacher": "Nawaid", "room": "HT-11" },
+        { "day": "Mon", "periods": [10], "componentId": "prog-fund-theory", "teacher": "S. Ejaz", "room": "HT-07" },
+        { "day": "Thu", "periods": [4], "componentId": "linear-algebra", "teacher": "TBA (LinAlg)", "room": "HFT-12" },
+        { "day": "Thu", "periods": [5], "componentId": "prog-fund-theory", "teacher": "S. Ejaz", "room": "HFT-12" },
+        { "day": "Thu", "periods": [6], "componentId": "aict-theory", "teacher": "F. Madiha", "room": "HFT-12" },
+        { "day": "Thu", "periods": [7, 8, 9], "componentId": "prog-fund-lab", "teacher": "S. Ejaz", "room": "HFT-06" },
+        { "day": "Thu", "periods": [10], "componentId": "physics-theory", "teacher": "TBA (Phys)", "room": "HS-01" },
+        { "day": "Fri", "periods": [1], "componentId": "linear-algebra", "teacher": "TBA (LinAlg)", "room": "HFT-01" },
+        { "day": "Fri", "periods": [2], "componentId": "aict-theory", "teacher": "F. Madiha", "room": "HFT-01" },
+        { "day": "Fri", "periods": [3], "componentId": "prog-fund-theory", "teacher": "S. Ejaz", "room": "HFT-01" },
+        { "day": "Fri", "periods": [4, 5, 6], "componentId": "physics-lab", "teacher": "TBA (Phys Lab)", "room": "HT-04" },
+        { "day": "Sat", "periods": [6, 7], "componentId": "pak-studies", "teacher": "F. Naz", "room": "FG-01" }
+      ]
+    }
+  ]
+}
