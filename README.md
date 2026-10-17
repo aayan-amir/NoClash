@@ -1,130 +1,219 @@
 # NoClash
 
-> **A high-craft timetable mixer for university students.**  
-> Pick your courses across multiple sections without scheduling conflicts. Zero sign-in, zero cloud databases, 100% private and offline-capable.
+> **AI-powered timetable extraction and clash-free schedule planning for university students.**
+
+NoClash turns timetable photos, screenshots, scans, and PDFs into structured course data. Upload a timetable, let AI identify courses and sections, review the extracted information, and build a personalized schedule with instant clash detection.
+
+**Live demo:** [no-clash.vercel.app](https://no-clash.vercel.app)  
+**Repository:** [github.com/aayan-amir/NoClash](https://github.com/aayan-amir/NoClash)
 
 ---
 
-## 🎯 The Problem
+## ✨ Why NoClash?
 
-During course registration weeks, university departments publish fixed timetable sheets for multiple sections (**Section A, Section B, Section C...**). 
+University timetables are often published as screenshots, scanned documents, PDFs, or photos of printed tables. Students usually have to manually read every row, identify course sections, copy instructors and rooms, compare alternatives, and search for schedule conflicts.
 
-Department rules allow students to cross-register across sections (e.g. taking Web Engineering Theory with Section A and the Lab with Section B). Previously, students had to juggle blurry photos of printed timetables, manual spreadsheets, and notebook grids—often making mistakes and registering for overlapping classes.
+NoClash automates the most tedious part: **turning visual timetable information into usable structured data.**
 
-**NoClash** solves this by putting the student in control:
-1. **Shows when classes are** via a single-SVG weekly **Weave** grid and an accessible Day-by-Day schedule.
-2. **Flags clashes immediately** with exact reasons (*"Computer Networks Theory overlaps Web Engineering Lab on Mon, 10:30 to 12:10"*).
-3. **Tracks what is left to choose** through an interactive Spool checklist.
-4. **Previews before committing** via ghost outline threads projected onto the grid.
+Instead of starting with a spreadsheet, students can start with the timetable they already have.
 
 ---
 
-## 🎨 Visual Identity: The Timetable is a Loom
+## 🤖 AI-first workflow
 
-Built around a cohesive textile metaphor, avoiding generic AI-template aesthetics:
-- **Warp (Vertical)**: Days of the week (Mon–Fri).
-- **Weft (Horizontal)**: Class periods across time.
-- **Threads**: Distinct course components assigned natural-dye colors (madder, turmeric, indigo, tea leaf, terracotta).
-- **Spools**: Component checklist bobbins winding thread as courses are picked.
-- **Clashes**: Interlaced 45° twill diagonal weave patterns with knot glyphs.
-- **Typography**: Atkinson Hyperlegible (high readability) paired with Albert Sans (display face).
+```text
+Timetable photo, screenshot, scan, or PDF
+                    ↓
+       AI analyzes the timetable image
+                    ↓
+ Courses, sections, instructors, rooms, days,
+          and time slots become structured data
+                    ↓
+       Student reviews and validates the result
+                    ↓
+       Course components are selected
+                    ↓
+        Schedule clashes are detected instantly
+                    ↓
+          A personalized timetable is ready
+```
+
+### What the AI extracts
+
+NoClash is designed to recognize the information students need when planning a semester:
+
+- Course names and codes
+- Sections and section-specific offerings
+- Instructors
+- Classrooms and room numbers
+- Days of the week
+- Start and end times
+- Course components such as theory, lab, tutorial, or practical sessions
+
+AI extraction provides a starting point—not a black box. Extracted data can be reviewed and corrected before it is used to build a schedule.
 
 ---
 
-## ⚡ Architecture & Zero-Backend Design
+## 🧠 From unstructured images to scheduling decisions
 
-NoClash runs as a static Single Page Application with **zero operational server costs**:
+NoClash separates the AI task from the scheduling task:
+
+1. **Understand the image** — extract timetable content from visual documents.
+2. **Structure the result** — represent courses, sections, and time slots in a consistent format.
+3. **Validate the data** — review and correct extraction results.
+4. **Plan the semester** — choose course components across available sections.
+5. **Reason about conflicts** — detect overlapping classes and explain the clashes.
+6. **Share the outcome** — preview and export a usable timetable.
+
+This makes the application useful beyond a single timetable format while keeping conflict detection deterministic and easy to verify.
+
+---
+
+## ⚡ Core features
+
+- **AI timetable extraction** from photos, screenshots, scans, and PDFs
+- **Human review and correction** before extracted data is used
+- **Course and section planning** across multiple section combinations
+- **Instant clash detection** with specific overlap explanations
+- **Weekly timetable visualization** for quickly understanding the schedule
+- **Day-by-day schedule view** for accessible, focused planning
+- **Schedule sharing** through compact URL-encoded selections
+- **High-resolution timetable export** as an image
+- **Offline-capable planning experience** for working with saved data
+- **Local authoring studio** for maintaining timetable data
+
+---
+
+## 🎨 A timetable as a loom
+
+NoClash uses a textile-inspired visual language to make a complex schedule feel understandable:
+
+- **Warp:** days of the week
+- **Weft:** class periods across time
+- **Threads:** course components represented with distinct colors
+- **Spools:** course-component selection controls
+- **Knots:** visible clash indicators
+- **Weave:** the weekly schedule grid
+
+The visual system is intentionally distinct from generic AI-product aesthetics. AI handles the difficult extraction step; the interface keeps the final planning decision visible and understandable.
+
+---
+
+## 🏗️ Architecture
+
+NoClash is a TypeScript single-page application focused on a lightweight, privacy-conscious planning experience.
 
 | Capability | Implementation |
 |---|---|
-| **Timetable Data** | Versioned static JSON files (`public/data/`) validated with Zod. |
-| **Picks Storage** | Local device `localStorage` with migration support and background freshness checks. |
-| **Schedule Sharing** | Zero-database URL sharing (`/#/s/5/share/<payload>`) encoding choices in compact Base64URL. |
-| **Shared Previews** | Non-destructive banner allowing recipients to preview schedules before importing. |
-| **Image Export** | High-resolution 1080px Canvas-to-PNG export with inlined fonts and legend. |
-| **Offline PWA** | Precached app shell and data with `vite-plugin-pwa` Service Worker. |
-| **Authoring Studio** | Offline visual admin tool (`npm run admin`) running locally on port 5174. |
+| Timetable data | Versioned static JSON files in `public/data/` |
+| Data validation | Zod schemas and validation scripts |
+| Schedule state | Local device storage with migration support |
+| Schedule sharing | URL-encoded selections using compact Base64URL payloads |
+| Clash detection | Deterministic client-side scheduling logic |
+| Image export | Canvas-to-PNG export with fonts and legend |
+| Offline support | PWA application shell and cached data |
+| Data authoring | Local visual admin studio via `npm run admin` |
+
+The AI extraction layer can convert visual input into the structured timetable format used by the planner. Once data is structured, schedule validation and clash detection remain transparent and predictable.
 
 ---
 
-## 📦 Performance & Budgets
-
-Enforced automatically via `npm run check:size`:
-- **Initial Production JS:** **75.44 KB** gzipped (Budget: ≤ 120 KB)
-- **Initial Production CSS:** **4.08 KB** gzipped (Budget: ≤ 15 KB)
-- **Core Unit Test Coverage:** **100% Statement, 100% Branch, 100% Function Coverage** (63 tests)
-
----
-
-## 🛠️ Getting Started
+## 🚀 Getting started
 
 ### Prerequisites
-- Node.js (v18+)
-- npm (v9+)
 
-### Installation
+- Node.js 18 or newer
+- npm 9 or newer
+
+### Install dependencies
+
 ```bash
 npm install
 ```
 
-### Development Server
+### Start the development server
+
 ```bash
 npm run dev
-# Opens http://localhost:5173
 ```
 
-### Local Admin Data Studio
+The application opens at `http://localhost:5173`.
+
+### Start the local data authoring studio
+
 ```bash
 npm run admin
-# Opens http://localhost:5174 for editing sections and slots
 ```
 
-### Production Build & Size Check
+The authoring studio opens at `http://localhost:5174`.
+
+### Build for production
+
 ```bash
 npm run build
+```
+
+### Check bundle size
+
+```bash
 npm run check:size
 ```
 
-### Running Test Suite
+### Run tests with coverage
+
 ```bash
 npm run test:coverage
 ```
 
-### Validating Timetable JSON Files
+### Validate timetable data
+
 ```bash
 npm run validate:data
 ```
 
 ---
 
-## 📁 Repository Layout
+## 📁 Repository layout
 
-```
-├── admin/                     # Local authoring studio (excluded from production builds)
+```text
+├── admin/                     # Local timetable authoring studio
 ├── docs/
 │   ├── architecture.md        # Architectural blueprint
-│   ├── data-authoring.md      # Owner timetable management guide
-│   └── decisions.md           # Product and design decisions log
+│   ├── data-authoring.md      # Timetable management guide
+│   └── decisions.md           # Product and design decisions
 ├── public/
 │   ├── data/
 │   │   ├── manifest.json      # Timetable directory
-│   │   └── semester-5.json    # Verified Semester 5 seed data
+│   │   └── semester-5.json    # Timetable seed data
 │   ├── icons/                 # PWA vector icons
 │   └── favicon.svg
 ├── scripts/
-│   ├── check-size.ts          # Budget verification script
+│   ├── check-size.ts          # Bundle budget verification
 │   ├── import-paste.ts        # Timetable text parser
-│   └── validate-data.ts       # Zod data validation script
+│   └── validate-data.ts       # Zod data validation
 └── src/
-    ├── core/                  # Pure logic (zero React/DOM dependencies, 100% test coverage)
-    ├── data/                  # Fetcher, cache, and freshness diffing
-    ├── design/                # CSS tokens, SVG pattern defs, and textile palettes
-    ├── features/              # Onboarding, Weave planner, and Week list view
-    ├── state/                 # Zustand stores with local persistence
-    └── ui/                    # Native accessible primitives (Spool, DayStrip, OptionCard, BottomSheet)
+    ├── core/                  # Pure scheduling and clash-detection logic
+    ├── data/                  # Data fetching, caching, and freshness checks
+    ├── design/                # CSS tokens, SVG patterns, and palettes
+    ├── features/              # Onboarding, planner, and schedule views
+    ├── state/                 # Zustand stores and local persistence
+    └── ui/                    # Accessible interface primitives
 ```
 
 ---
 
+## 🔐 Built for reviewable AI output
+
+Timetable extraction can be difficult because real-world documents are inconsistent: layouts vary, text can be blurry, and tables may contain abbreviations or merged cells. NoClash treats AI output as structured assistance that should be inspected before it becomes a student's schedule.
+
+The product experience is built around three principles:
+
+- **AI for interpretation:** reduce manual data entry from visual timetables.
+- **Structured data for planning:** make extracted information reusable and searchable.
+- **Deterministic validation:** make schedule conflicts explainable and verifiable.
+
+---
+
 ## 📜 License
-ISC License. Built with craft for university students.
+
+ISC License. Built with craft and AI assistance for university students.
